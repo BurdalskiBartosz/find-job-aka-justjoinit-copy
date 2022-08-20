@@ -5,11 +5,11 @@ const root = resolve(__dirname, "src");
 
 export default defineConfig({
 	root,
+	publicDir: resolve(__dirname, "public"),
 	build: {
 		rollupOptions: {
 			input: {
-				main: resolve(__dirname, "src/index.html"),
-				nested: resolve(__dirname, "src/nested/index.html")
+				main: resolve(root, "/index.html")
 			}
 		}
 	}

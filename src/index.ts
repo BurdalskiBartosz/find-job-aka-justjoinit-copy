@@ -1,9 +1,9 @@
 import "./scss/index.scss";
 
-class Application {
+class App {
 	init() {
 		console.log("Here we go");
 	}
 }
-const app = new Application();
+const app = new App();
 app.init();
